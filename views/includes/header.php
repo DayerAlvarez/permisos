@@ -12,9 +12,10 @@
   <link rel="stylesheet" href="<?= SERVERURL ?>plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= SERVERURL ?>dist/css/adminlte.min.css">
+   
+  <link rel="stylesheet" href="<?= SERVERURL ?>dist/css/estilos.css">
 
-<!-- ESTILOS PERSONALIZADOS-->
-<link rel="stylesheet" href="<?= SERVERURL ?>dist/css/estilos.css">
+
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -108,7 +109,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="index3.html" class="brand-link">
+      <a href="<?= SERVERURL ?>views" class="brand-link">
         <img src="<?= SERVERURL ?>dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light"><?= COMPANY ?></span>
       </a>

@@ -11,21 +11,7 @@ require_once "../includes/header.php";
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="m-0">Registro de colaborador</h1>
-                </div><!-- /.col -->
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Starter Page</li>
-                    </ol>
-                </div><!-- /.col -->
-            </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
-    </div>
+    <?php echo renderContentHeader("Registro de colaboradores", "Lista colaborador","./lista-colaborador");?>
     <!-- /.content-header -->
 
     <div class="content">
@@ -79,11 +65,6 @@ require_once "../includes/header.php";
 
 
     <!-- Main content -->
-    <div class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12"></div>
-            </div>
             <!-- /.row -->
         </div><!-- /.container-fluid -->
     </div>
@@ -95,6 +76,27 @@ require_once "../includes/header.php";
 //Incluye las ultimos 2 secciones ASIDE + FOOTER y <SCRIPT>
 require_once "../includes/footer.php";
 ?>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        //Objetos
+
+
+        //Funciones
+
+        //Eventos
+        document.querySelector("#Formulario-registro").addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            if (confirm("¿Desea guardar?")){
+                console.log("Grabado correctamente...");
+            }
+        })
+        //Disparadores
+        
+    })
+</script>
 
 </body>
 
