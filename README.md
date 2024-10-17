@@ -1,32 +1,36 @@
-# Acerca de esta App
-## Plantilla: AdminLTE + PHP Core
-### Desarrollo por Dyer Alvarez De la cruz
+# Acerca de esta APP
+## Plantulla : AdminLTE + PHP Core
+## Desarrollado por edu estefano olivos marquez
 
-Esta platilla ah sido administrada utilizando  **codigo backend** PHP
-Tecnologias utilizadas:
-- PHP 8 *(Arquitectura MVC)*
-- AdiminLTE
-- Bootstrap
+Esta plantilla hasido administrada utilizando *codigo backend* 
+PHP Tecnologia utilizadas 
+- PHP 8 (Arquitectura MVC)
+- AdminLTE
+- Boostrap
 - jQuery
 
 
-```
-Esta es una cita importante, documenta informacion Software
-```
 
-```html
-<link rel= 'stylesheet' href='ruta_absoluta/estilos.css'>
+Esta es una cita importante, documenta informacion sobre Software
 
-EN PHP utilizaremos clases y manejador de excepciones
 
-```php
-class MiClase{
-    function hacer(){
-        try{
+html
+<link rel= 'stylesheet' href= 'ruta_absoluta/estilo.css'>
 
-        }catch(Exception $e){
 
-        }
+En PHP utilizaremos clases y manejadores de excepciones
+PHP 
+class MiClase{ 
+  function hacerAlgo(){
+    try{
+      
+    }catch(Exception $e){
+
     }
+  }
+
 }
-```
+
+
+> [!IMPORTANT]
+> No olvidar utilizar el sitema de control de version
