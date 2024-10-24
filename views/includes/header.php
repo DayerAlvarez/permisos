@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8">
   <!-- para que sea responsibo-->
@@ -13,7 +12,7 @@
   <link rel="stylesheet" href="<?= SERVERURL ?>plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= SERVERURL ?>dist/css/adminlte.min.css">
-
+   
   <link rel="stylesheet" href="<?= SERVERURL ?>dist/css/estilos.css">
 
 
@@ -123,7 +122,7 @@
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-              <a href="<?= SERVERURL ?>views/horarios/lista-horario" class="nav-link">
+            <a href="<?= SERVERURL ?>views/horarios/lista-horario" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   Horarios
@@ -139,7 +138,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?= SERVERURL ?>views/permisos/lista-permiso" class="nav-link">
+            <a href="<?= SERVERURL ?>views/permisos/lista-permiso" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   Permisos
@@ -147,7 +146,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+            <a href="<?= SERVERURL ?>views/reportes/lista-reporte" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   Reportes
