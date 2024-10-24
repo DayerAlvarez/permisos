@@ -32,13 +32,10 @@ require_once "../includes/header.php";
             </div>
 
             <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-sm table-striped">
-          
-                  
-                  <tfoot></tfoot>
-                </table>
-              </div>
+              <?php
+              $url = $_SERVER["REQUEST_URI"];
+              ?>
+              
             </div>
           </div>
         </div>
