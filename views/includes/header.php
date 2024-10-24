@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['login']) || $_SESSION['login']['status'] == false){
+  header("Location: ". SERVERURL);
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,6 +17,8 @@
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="<?= SERVERURL ?>plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
@@ -102,6 +113,13 @@
             <i class="fas fa-th-large"></i>
           </a>
         </li>
+        <!-- Cerrar sesion -->
+        <li class="nav-item">
+          <a class="nav-link" href="<?= SERVERURL ?>app/controllers/usuario.controller.php?operation=destroy" role="button" title="Cerrar sesion">
+            <i class="fa-solid fa-person-running"></i>
+          </a>
+        </li>
+        
       </ul>
     </nav>
     <!-- /.navbar -->
